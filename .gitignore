@@ -1,0 +1,30 @@
+cat > .gitignore <<'EOF'
+# Python environments
+.venv/
+.venv311/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Vector database
+chroma_db/
+
+# Downloaded AI models
+*.gguf
+*.safetensors
+
+# Backup documents
+documents_backup/
+
+# System files
+.DS_Store
+*.log
+EOF
+documents/
+_pyllmodel.py
